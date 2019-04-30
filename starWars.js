@@ -42,6 +42,14 @@ $(document).ready(function(){
     }
   });
 
+  swapiModule.getFilms(1, function(data) {
+    
+    
+
+
+  }
+);
+
 });
 
 function sortTable(n) {
