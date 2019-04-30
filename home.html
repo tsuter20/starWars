@@ -1,18 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Star Wars Films</title>
-    <script src="swapi.min.js"></script>
+    <title>Star Wars</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="starWars.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="starWars.js"></script>
+    <script src="swapi.min.js"></script>
 </head>
 
 <body>
-    <button type="button" onclick="test()">click me</button>
 
-    <ul id="movieList">
+    <div class="jumbotron text-center">
+        <h1>Star Wars</h1>
+    </div>
 
-    </ul>
+    <table id="myTable" class="table">
+        <tbody id="myTableBody">
+        <tr>
+            <th onclick="sortTable(0)" scope="col">Title</th>
+            <th onclick="sortTable(1)" scope="col">Episode Number</th>
+            <th onclick="sortTable(2)" scope="col">Release Date</th>
+        </tr>
+
+        </tbody>
+    </table>
+
+
+
+
 </body>
 
 </html>
