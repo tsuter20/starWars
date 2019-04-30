@@ -1,8 +1,13 @@
 function test() {
     swapiModule.getFilms(1, function(data) {
-        var array = [];
+        
         for (var result of data.results) {
-            array.push(result.title);
+            var x = document.createElement("li");
+            var y = document.createTextNode(result.title);
+
+            x.appendChild(y);
+
+            document.getElementById("movieList").appendChild(x);
         }
 
         console.log(array);
